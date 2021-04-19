@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* font-family: 'Open Sans', sans-serif; */
+
+/* preprosses */
+
+h1{
+    font-size: 34px;
+    padding: 25px 0;
+}
+h1,h2,h3,h4,h5,h6{color:#383b61;}
+ul{list-style: none;}
+a{text-decoration: none;}
+p{
+    line-height: 1.6;
+    font-size: 18px;
+    color: #818198;
+}
+
+/*  x   preprosses  x   */
+
+
+/* global classes */
+.bg{background: rgb(240,245,249);}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btn{
+    border: #333347 solid 2px;
+    padding: 8px 25px;
+    border-radius: 5px;
+    background: transparent;
+}
+.success{
+    background: #21bf73;
+    color: white;
+    border: #21bf73 solid 2px;
+}
+.primary{
+    background-color: transparent;
+    color: #3498db;
+    border: 2px solid #3498db;
+}
+.primary:hover{
+    color: #FFFFFF !important;
+    background-color: #3498db;
+}
+/*   x  global classes  x   */
+
+
+
+.navbar .menu ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.navbar .menu ul li{
+    padding: 20px 10px;
+}
+.navbar .brand{
+    color: #333347;
+}
+.navbar .menu ul li a{
+    color: #8a8a8a;
+}
+.navbar .menu ul li a.btn:hover{
+    background: #21bf73;
+    color: white;
+    border: #21bf73 solid 2px;
+}
+
+
+/* header  */
+.header{
+    padding: 70px 0;
+    margin-bottom: 100px;
+}
+.header .headerInfo, .whatsInside .servisesInfo, .reviews .title{
+    flex: 2;
+}
+.header .headerInfo h3{
+    color: #5c5c5c;
+}
+.header .headerInfo h1{
+    color: #3a3a47;
+}
+.header .headerInfo a{
+    margin-right: 20px;
+}
+.header .headerInfo p{
+    margin-top: 25px;
+    font-size: 1rem;
+}
+.header .headerImage, .whatsInside .empty, .reviews .customerReview{
+    flex: 3;
+}
+.header .headerImage img{
+    width: 100%;
+}
+/* x   header  x */
+
+
+.fluidLayouts{margin: 50px 0;}
+.whatsInside .servisesInfo h4{color: #21bf73;}
+.whatsInside .servisesInfo p{
+    color: #818198;
+}
+.layout{
+    flex-basis: 31.5%;
+    padding: 50px;
+}
+.layout.eye{background: #f8f9fa;}
+.layout.youtube{background: #fff2e5;}
+.layout img{
+    width: 80px;
+}
+.layout h3{
+    margin: 25px 0;
+}
+
+
+
+.servises{
+    margin: 100px 0;
+}
+.servises .servise{
+    display: flex;
+    padding: 100px 50px;
+}
+.servises .servise img{
+    width: 50%;
+    padding: 0 25px;
+}
+.servises .servise .info{padding: 0 25px;}
+.servises .servise h1{
+    color: #383B61;
+}
+.servises .servise .info p{
+    color: #6A7076;
+}
+.servises .servise .info ul{
+    margin: 20px 0;
+    list-style-image: url(../images/tick.svg) ;
+    list-style-position: inside;
+}
+.servises .servise .info ul li{
+    line-height: 30px;
+    color: #6A7076;
+}
+.servises .servise .info ul li::marker{
+    text-align: center !important;
+    text-indent: 10px !important;
+}
+.servises>.servise.highDefination{
+    padding-top:0px ;
+}
+
+.ourResults{
+    text-align: center;
+}
+.ourResults>h4{color: #3498db;}
+.ourResults .result .items{
+    flex: 1;
+    padding: 50px 0;
+}
+.ourResults .result .items img{
+    width: 80px;
+}
+.ourResults .result .items h4{
+    color: #ABAFB3;
+}
+
+
+.reviews{
+    margin: 50px 0 ;
+    padding: 50px;
+}
+.reviews .title{
+    padding: 50px 0;
+}
+.reviews .review{
+    padding: 50px 0;
+}
+.reviews .review p img{
+    width: 70px;
+}
+.reviews .review .customer{
+    justify-content: left;
+    padding: 15px 0 0;
+}
+.reviews .review .customer img{
+    width: 70px;
+    border-radius: 50%;
+}
+.reviews .review .customer p{
+    font-size: 0.9rem;
+}
+.reviews .review .customer div p span{
+    color: #3498db;
+}
+.reviews .review .customer div{
+    padding: 35px;
+}
+
+.reviews .customerReview{
+    width: 100%;
+    height: 300px;
+    display: inline-block;
+    overflow: hidden;
+}
+.reviews .customerReview .review{
+    display: inline-block;
+}
+
+
+
+.Pricing{
+    padding: 50px 0;
+    text-align: center;
+}
+.Pricing .prices{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.Pricing .prices .price{
+    padding: 50px 90px;
+    margin: 15px;
+}
+.Pricing .prices .price img{
+    width: 120px;
+}
+.Pricing .prices .price h1{
+    padding-bottom: 0;
+}
+.Pricing .prices .price .expairyDate{
+    margin-bottom: 20px;
+}
+.Pricing .note{
+    font-size: 12px;
+    color: #505050;
+}
+
+
+.faq{
+    margin: 50px 0;
+    padding: 100px;
+}
+.faq p{
+    padding-bottom: 25px;
+}
+.faq p a{
+    color: #047aed;
+}
+.faq .queries{
+    align-items: flex-start;
+}
+.faq .queries .querie{
+    width: 50%;
+    padding: 20px;
+    height: 100px;
+    overflow: hidden;
+    transition: all ease-in-out 2s;
+}
+.faq .queries .querie h2{
+    padding-bottom: 30px;
+    font-size: 1.3rem;
+}
+.faq .queries .querie .ans{
+    padding-top: 20px;
+}
+.faq .queries .querie .question{
+    cursor: pointer;
+}
+.faq .queries .querie:hover{
+    height: fit-content;
+    transition: all ease-in-out 2s;
+}
+
+
+.subscribe{
+    text-align: center;
+    padding: 50px 70px;
+}
+.subscribe h4{color: #21bf73;}
+.subscribe .email{
+    margin: 0 auto;
+    justify-content: center;
+}
+.subscribe .email input{
+    padding: 12px;
+    width: 45%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+}
+.subscribe .email a{
+    border-radius: 0 5px 5px 0;
+    font-size: 14px ;
+    padding: 10px 50px;
+}
+.subscribe .error p{
+    display: none;
+    padding-top: 25px;
+    color: #21bf73;
+    font-size: 0.9rem;
+}
+
+
+
+.footer{
+    margin-top: 50px;
+    padding: 30px;
+}
+.footer .nav ul li{
+    padding: 12px;
+}
+.footer .socialIcons img{
+    width: 40px;
+    padding: 8px;
+}
